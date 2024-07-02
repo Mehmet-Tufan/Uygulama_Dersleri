@@ -3,7 +3,7 @@ package week02.day02.Odevler;
 import java.time.LocalTime;
 import java.util.Scanner;
 /*
-    1397311 Asal sayisi ile test edilmiştir.
+    1397311 Asal sayisi ile test edilmiştir.Çalışma saat aralığına bakılıp saniye cinsinden fark alınmıştır.
  */
 public class AsalSayiVerimli {
 	public static void main(String[] args) {
@@ -41,8 +41,8 @@ public class AsalSayiVerimli {
 		LocalTime endDAte = LocalTime.now();
 		System.out.println(startDate);
 		System.out.println(endDAte);
-		double second = startDate.getSecond();
-		double second2 = endDAte.getSecond();
+		int second = startDate.getSecond();
+		int second2 = endDAte.getSecond();
 		System.out.println(second);
 		System.out.println(second2);
 		System.out.println("saniye farkı = " + (second2 - second));
