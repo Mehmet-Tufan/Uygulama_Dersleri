@@ -39,6 +39,7 @@ public class Qestion007 {
 			number--;
 		}*/
 		System.out.println("Faktöriyel "+ number+" = "+factorıal);
+		scanner.close();
 		
 	}
 }

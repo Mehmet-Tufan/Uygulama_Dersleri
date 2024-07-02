@@ -34,6 +34,6 @@ public class Qestion006 {
 		double average=(total)/2;
 		ısItEven=((total/2)%2==0);
 		System.out.println("Sayıların ortalaması :"+average+"\n"+"Çift mi: " +ısItEven );
-		
+		scanner.close();
 	}
 }
