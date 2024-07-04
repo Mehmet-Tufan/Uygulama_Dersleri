@@ -1,0 +1,73 @@
+JAVA TEMELLER
+
+1 Temmuz 2024 Pazartesi
+21:38
+
+DEĞİŞKENLERİ SABİT(COSTANT) YAPMAK
+
+SABİT KULLANIMI
+
+ final int a=5;
+
+         System.out.println(a);
+
+          a=10;
+//HATA!!! final keywordü ile tanımlanan değişkenlere sadece 1 kere değer atanır.
+
+ //Sonradan o değer değiştirilemez.
+
+       System.out.println(a); >-------ÇIKTI DEĞERİ 5 OLUR
+
+
+ final int b; // sabit tanımlama
+
+ b=10; // sabite ilk değer aktarımı
+
+  b=20; //HATA!!! sabitin değeri değiştirilemez.
+
+
+int c;
+
+ c=10;
+
+ c=20;    // DEĞER 20 OLUR
+
+
+//Math sınıfındaki PI sabitinin kullanımı:
+
+           System.out.println(Math.PI);>------ MATH SINIFI İÇİNDEKİ PI SABİT DEĞERİNİ KULLANIR.
+
+              float r=5f;
+
+                 final double DAIRE_CEVRE=2 * Math.PI * r;
+
+                      final String MARKA="Bilge Adam";
+
+
+l
+• MATH SINIFI İÇİNDE SABİT DEĞİŞKEN TANIMLAMALARI BÜYÜK HARFLERLE TANIMLANMIŞTIR.
+
+OTOMATİK YÜKSELTME
+
+İkili aritmetik işlemciler, yaptıkları işlem sonucunda en az int tipinde bir değer
+üretirler. Yani
+• En az bir işlenen double ise sonuç double,
+• Değilse, en az bir işlenen float ise sonuç float,
+• Değilse, en az bir işlenen long ise sonuç long,
+• Aksi taktirde sonuç int tipinde olur.
+▪ Yani, int‘den daha küçük tipteki işlenenlerle yapılan aritmetik işlemler daima int bir sonuç  üretir.
+
+long sonuc;
+sonuc = 5_000_000_000L + 3;
+
+double sonuc2;
+sonuc2 = 5.25 + 3;     >----ONDALIKLI SAYILARDA DEFAULT OLARAK DOUBLE ALIR.
+
+float sonuc3;
+sonuc3 = 5.25f + 3;
+//HATA 1:
+int i = 5;
+double d = 2.3;
+
+i = (int) (i + d);    // ikili aritmetik operatör ile kullanılan değerlerden bir tanesi double ise sonuçdoubledır. O yüzden bu sonucu int türünde bir değişkende saklayamayız. Bu sorun işlemin cast işlemine tabii tutulmasıyla aşılabilir.
+System.out.println(i);
